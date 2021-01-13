@@ -1,5 +1,5 @@
 # Simon Game <br />
-Demo link: 
+Demo link: https://kushalt93.github.io/simon_game/
 
 Built using HTML, CSS, JavaScript, and JQuery.
 
