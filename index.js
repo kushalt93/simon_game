@@ -5,19 +5,42 @@ var level = 0
 var gameInProgress = false
 
 
+$(document).ready(function() {
+    $( "#dialog" ).dialog({
+      height: "auto",
+      width: "500",
+      modal: true,
+      buttons: {
+        "I'm ready to play": function() {
+            if(!gameInProgress){
+                $("h1").text("Level " + level);
+                nextNumber();
+                gameInProgress = true;
+            }
+            $( this ).dialog( "close" );
+        },
+        "Never Mind!, I will come back later": function() {
+            $("h1").text("Refresh the page to play the game");
+            $( this ).dialog( "close" );
+        }
+      }
+    });
+  } );
+
+
 function start(){
     level = 0;
     gamePattern = []
     gameInProgress = false;
 }
 
-$("body").keydown(function (e) {
-    if(!gameInProgress){
-        $("h1").text("Level " + level);
-        nextNumber();
-        gameInProgress = true;
-    }
-});
+// $("body").keydown(function (e) {
+//     if(!gameInProgress){
+//         $("h1").text("Level " + level);
+//         nextNumber();
+//         gameInProgress = true;
+//     }
+// });
 
 async function nextNumber(){
     userClickedPattern = [];
@@ -40,9 +63,10 @@ async function nextNumber(){
       });
     }
 
-    $("div[type=button]").click(function(e){
+  $("div[type=button]").click(function(e){
         var userChosenColor = e.target.id;
         userClickedPattern.push(userChosenColor);
+        $("#" + userChosenColor).fadeOut(100).fadeIn(100);
         playSound(userChosenColor);
         pressAnimation(userChosenColor)
         checkAnswer(userClickedPattern.length-1)

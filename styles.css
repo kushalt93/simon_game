@@ -1,20 +1,16 @@
+/********************************Tag Selector********************************************/
 body {
   text-align: center;
   background-color: #011F3F;
 }
 
-#level-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin:  5%;
-  color: #FEF2BF;
-}
+
+/********************************Class Selector********************************************/
 
 .container {
   display: block;
   width: 50%;
   margin: auto;
-
 }
 
 .btn {
@@ -24,6 +20,10 @@ body {
   width: 150px;
   border: 10px solid black;
   border-radius: 20%;
+}
+
+.btn:hover{
+  cursor: pointer;
 }
 
 .game-over {
@@ -51,6 +51,72 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+
+.ui-dialog {
+  position: absolute;
+  box-shadow: 1px 1px 30px 5px;
+  border-radius: 10px;
+  border: 10px solid black;
+  outline: none;
+  overflow: hidden;
+  margin-top: none;
+  text-align: left;
+  font-size: 1.5rem;
+  background-color: #FEF2BF;
+}
+
+.ui-dialog-buttonset{
+  text-align: center;
+}
+
+.intro-heading{
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  margin-top:  5%;
+}
+
+.ui-button{
+  
+  color: #fff !important;
+  text-decoration: none;
+  background: #961a2f;
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 50px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  outline: none;
+}
+
+.ui-button:hover{
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+}
+
+.ui-dialog-titlebar-close {
+  visibility: hidden;
+}
+
+/********************************ID Selector********************************************/
+
+
+
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+
+
+
 
 
 /* header figcaption{

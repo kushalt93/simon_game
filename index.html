@@ -3,9 +3,16 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Simon</title>
+  <link rel="icon" 
+  type="image/png" 
+  href="simon.png">
+  <title>Simon Game</title>
+
+  <!-- -----------jQuery UI CDN----------- -->
+
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  
 </head>
 
 <body>
@@ -16,8 +23,9 @@
       </figure>
     </header> -->
   
-  <h1 id="level-title">Press A Key to Start</h1>
+  <h1 id="level-title">Click Start to play the game</h1>
   <div class="container">
+
     <div class="row">
 
       <div type="button" id="green" class="btn green">
@@ -37,12 +45,25 @@
       <div type="button" id="blue" class="btn blue">
 
       </div>
-
+      <div id="dialog">
+        <p>
+          <h3 class="intro-heading">Please read the instructions</h3>
+          <ul>
+            <li>Press the READY button. Simon will give the first signal. Repeat the signal by pressing the 
+              same color lens.</li>
+            <li>Simon will duplicate the first signal and add one. Repeat these two signals by pressing the 
+              same color lenses, in order.</li>
+              <li>Simon will duplicate these first two signals and add one.</li>
+              <li>Continue playing as long as you can repeat each sequence of signals correctly.</li>
+          </ul>
+        </p>
+          </div>
+      </div>
     </div>
-    
   </div>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <script src="index.js"></script>
 </body>
 
