@@ -21,7 +21,7 @@ $(document).ready(function() {
         },
         "Never Mind!, I will come back later": function() {
             $("h1").text("Refresh the page to play the game");
-            $( this ).dialog( "close" );
+            $(this).dialog( "close" );
         }
       }
     });
@@ -82,7 +82,7 @@ function checkAnswer(currentLevel) {
     } else {
       playSound("wrong");
       $("body").addClass("game-over");
-      $("#level-title").text("Game Over, Press Any Key to Restart");
+      $("#level-title").text("Game Over, Refresh the page to play again");
 
       setTimeout(function () {
         $("body").removeClass("game-over");
