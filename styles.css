@@ -1,7 +1,7 @@
 /********************************Tag Selector********************************************/
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-color: #2b2f5f;
 }
 
 
@@ -71,7 +71,7 @@ body {
 
 .intro-heading{
   text-align: center;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Source Code Pro', monospace;
   font-size: 1.5rem;
   margin-top:  5%;
 }
@@ -108,7 +108,7 @@ body {
 
 
 #level-title {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Source Code Pro', monospace;
   font-size: 2rem;
   margin:  5%;
   color: #FEF2BF;
